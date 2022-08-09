@@ -1,0 +1,32 @@
+body, table {
+	/*height: 20px;*/
+	/*background-color: #2D6D8E;
+	border-bottom: 2px #666 inset;*/
+	/*margin: 1px;
+	padding: 5px;
+	height: 160px;
+	height: 480px;
+	width:	320px;
+    text-align:center;*/
+	font-family: SF-Pro-Text-Regular;
+	font-size: 25;
+}
+
+@font-face {
+	font-family: SF-Pro-Text-Regular;
+	font-style:normal;
+	font-weight:normal;
+	src: url('../fonts/SF-Pro-Text-Regular.otf') format("opentype");
+}
+
+/*table {
+    text-align:center;
+}
+
+#main {
+    text-align: center;
+  }
+
+  div{ 
+    text-align: center; 
+  }*/
