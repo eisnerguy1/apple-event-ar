@@ -8,12 +8,45 @@
     <link rel="shortcut icon" href="images_new/ARBadge.ico">
     <link href="images_new/ARBadge.ico" rel="shortcut icon" type="image/x-icon">
    <link rel="stylesheet" href="scripts/style.css" />
-   <link rel="stylesheet" href="scripts/overview.built.css" />
-   <script src="scripts/overview.built.js"></script>
-      <script src="scripts/head.built.js"></script>
-      <script src="scripts/wombat.js"></script>      
     <title>Apple AR</title>
     <meta charset="utf-8">
+    <script>
+        var urlArray = [
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_1.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_2.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_3.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_4.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_5.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_6.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_7.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_8.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_9.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_10.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_11.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_12.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_13.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_14.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_15.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_16.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_17.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_18.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_19.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_20.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_21.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_22.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_23.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_24.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_25.usdz",
+"https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_26.usdz"
+];
+
+function randomUrl() {
+var randomNumber = Math.floor(Math.random() * urlArray.length);
+var newUrl = urlArray[randomNumber];
+window.location.href = newUrl;
+}
+
+    </script>
 </head>
 <body align=center>
 <br>
@@ -116,7 +149,7 @@
 
     <tr>
         <td>
-            <a class="ar-link ios-14" el="ar" href="https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_1.usdz" id="arql-link"><img src="images_new/2022-06-06.jpg" width="690" title="2022-06-06"></a>
+            <a rel="ar" onclick="randomUrl();" target="_blank" href=""><img src="images_new/2022-06-06.jpg" width="690" title="2022-06-06"></a>
             <br>
             <div align=center>
                 <a href="https://web.archive.org/web/20220605020300/https://www.apple.com/apple-events/"><img src="images_new/twitter/2022-06-06.png"></a> <a href="https://www.macrumors.com/2022/05/31/apple-wwdc-2022-ar-trading-cards/"><img src="images_new/macrumors.png" width="96"></a>
