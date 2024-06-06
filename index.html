@@ -12,6 +12,39 @@
    <meta charset="UTF-8">
     <title> Event AR</title>
     <meta charset="utf-8">
+<style>
+    img.emojione {
+  // Override any img styles to ensure Emojis are displayed inline
+  margin: 0px !important;
+  display: inline !important;
+  
+  height: auto;
+  width: 50px;
+}
+
+p#wrong-test {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+  display: inline-block;
+}
+
+span.emoji {
+  font-size: 35px;
+  vertical-align: middle;
+  line-height: 1;
+}
+</style>
+<script>
+        function convert() {
+      var input = document.body.innerHTML;
+      var output = emojione.unicodeToImage(input);
+      document.body.innerHTML = output;
+    }
+
+    convert();
+
+</script>
+
     <script>
         var urlArray = [
 "https://www.apple.com/105/media/us/apple-events/2022/a58ceb3c-1695-4b46-8b70-a8e67e5450ba/quick-look/apple_event_en_1.usdz",
@@ -58,7 +91,7 @@ window.location.href = newUrl;
     <br><br>
     The Apple logo will launch the Apple Event pages (via The Internet Archive), the MacRumors/9to5Mac icons will launch the article showcasing the easter eggs. Clicking on the event banners will launch the AR easter egg itself. 
     <br><br>
-    To launch the WWDC22 AR easter egg, click the event banner to get randomly 1 of 26 different card packs. You'll need to reload this page to get a different random pack. You'll then need to click on the preview to actually launch the AR easter egg. I couldn't get <a href="https://developer.apple.com/documentation/arkit/previewing_a_model_with_ar_quick_look">AR Quick Look</a> to work with random links.
+    To launch the WWDC22 AR easter egg, click the event banner to get randomly 1 of 26 different card packs. You'll need to reload this page to get a different random pack. Just click on <span class="emoji">🔄</span> below the WWDC23 banner image. You'll then need to click on the preview to actually launch the AR easter egg. I couldn't get <a href="https://developer.apple.com/documentation/arkit/previewing_a_model_with_ar_quick_look">AR Quick Look</a> to work with random links.
     <br><br>
     In order to view the AR easter eggs, you'll need to view this website from an iOS device running iOS 15 or later.
     <br><br>
@@ -173,7 +206,7 @@ window.location.href = newUrl;
         <td>
             <a rel="ar" onclick="randomUrl();" target="_blank" href=""><img src="images_new/2022-06-06.jpg" width="690" title="2022-06-06"></a>
             <br>
-                    <b><u>June 6th, 2022</b></u>
+                    <b><u>June 6th, 2022</b></u>      <a href="javascript:window.location.reload(true)"><span class="emoji">🔄</span></a>
         <br>
             <div align=center>
                 <a href="https://web.archive.org/web/20220605020300/https://www.apple.com/apple-events/"><img src="images_new/twitter/2022-06-06.png"></a> <a href="https://www.macrumors.com/2022/05/31/apple-wwdc-2022-ar-trading-cards/"><img src="images_new/macrumors.png" width="78"></a>
